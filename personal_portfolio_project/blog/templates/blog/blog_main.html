@@ -6,5 +6,15 @@
 </head>
 <body>
 
+
+    {%for project in blogContent %}
+    <h2>{{ project.title }}</h2>
+        <h1>{{ project.description }}</h1>
+        <p></p>
+        <img src="{{ project.image.url }}">
+        <form action="" target="get">
+        <a type="button" href="/">Link</a>
+                </form>
+    {% endfor %}
 </body>
 </html>
