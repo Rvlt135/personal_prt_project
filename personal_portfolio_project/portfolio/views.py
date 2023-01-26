@@ -1,7 +1,8 @@
-from django.shortcuts import render
 from django.http.response import HttpResponse
+from .models import Project
+from django.shortcuts import render
 
 
-# Create your views here.
 def main_page(request):
-    return render(request, 'generator/index.html')
+    projects = Project.objects.all()
+    return render(request, 'portfolio/index.html', {'projects': projects})
