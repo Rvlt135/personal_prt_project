@@ -4,5 +4,5 @@ from django.shortcuts import render
 
 
 def main_page(request):
-    projects = Project.objects.all()
-    return render(request, 'portfolio/index.html', {'projects': projects})
+    project_objects = Project.objects.all()
+    return render(request, 'portfolio/index.html', {'project_objects': project_objects})
