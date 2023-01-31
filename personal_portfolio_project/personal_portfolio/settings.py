@@ -74,15 +74,16 @@ WSGI_APPLICATION = 'personal_portfolio.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
+# test user
+# port hosts
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'personal_portfolio_project',
-        'USER': 'rvlt',
-        'PASSWORD': 'password',
+        'NAME': 'test_django_db',
+        'USER': 'user',
+        'PASSWORD': '123qwe',
         'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'PORT': '5433',
     }
 }
 
